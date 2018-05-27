@@ -1,1 +1,4 @@
-<h1>Products component title</h1>
+<h1>Products component</h1>
+ <input type="text" [(ngModel)]="productName">
+<button (click)="productName = 'Something else'" [disabled]="isDisabled">Change name</button>
+<div>{{productName}}</div>
